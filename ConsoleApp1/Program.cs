@@ -9,9 +9,6 @@ using System.Threading.Tasks;
 
 namespace Notebook
 {
-    /*
-    * Очередное приключение в Рейд-режиме ждёт! Условия и задачи текущей стадии находятся в файле Conditions.txt.
-    */
 
     public class Notebook
     {
