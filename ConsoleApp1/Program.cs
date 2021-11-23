@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -118,24 +118,24 @@ namespace Notebook
                         allNotes[id] = new Note(optionProperty[1], optionProperty[2], optionProperty[3], optionProperty[4], optionProperty[5], optionProperty[6], optionProperty[7], optionProperty[8], optionProperty[9], id);
                     }
                 }
-                Console.Write("Поле изменено! Продолжить редактирование записи? (yes/no): ");
+                Console.Write("Поле изменено! Продолжить редактирование записи? (да/нет): ");
                 string input;
                 while (true)
                 {
                     input = Console.ReadLine();
-                    if (input == "yes")
+                    if (input == "да")
                     {
                         Console.Clear();
                         break;
                     }
-                    else if (input == "no")
+                    else if (input == "нет")
                     {
                         Console.Clear();
                         return;
                     }
                     else
                     {
-                        Console.Write("Пожалуйста введите yes или no: ");
+                        Console.Write("Пожалуйста введите да или нет: ");
                     }
                 }
             }
@@ -192,7 +192,6 @@ namespace Notebook
 
         private static void Greetings()
         {
-            Console.WriteLine("Добро пожаловать в нашу записную книжку!");
             Console.WriteLine("\t- для создания новой записи введите команду: create.");
             Console.WriteLine("\t- для просмотра записи введите команду: show.");
             Console.WriteLine("\t- для редактирования записи введите команду: edit.");
@@ -213,15 +212,15 @@ namespace Notebook
                 switch (command)
                 {
                     case "create":
-                        //Console.WriteLine("Создание");
+                        //Console.WriteLine("Создать");
                         CreateNote();
                         break;
                     case "show":
-                        //Console.WriteLine("Показ");
+                        //Console.WriteLine("Показать");
                         ReadNote();
                         break;
                     case "edit":
-                        //Console.WriteLine("Редактирование");
+                        //Console.WriteLine("Редактировать");
                         UpdateNote();
                         break;
                     case "del":
@@ -229,7 +228,7 @@ namespace Notebook
                         DeleteNote();
                         break;
                     case "all":
-                        //Console.WriteLine("Всё");
+                        //Console.WriteLine("Все");
                         ShowAllNotes();
                         break;
                     case "exit":
